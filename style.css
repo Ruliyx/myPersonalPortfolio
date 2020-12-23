@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mulish&family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+*, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Abel;
+}
+
+h2 {
+    padding-bottom: 1em;
+    font-size: 40pt;
+}
+
+p {
+    font-family: Rajdhani;
+    font-size: 20pt;
+}
+
+/******** Navbar ********/
+#navbar {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #F7D603;
+    padding-right: 2em;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-family: Abel;
+    text-transform: uppercase;
+    z-index: 10;
+    outline: 5px solid rgba(0,0,0,0.1);
+    outline-offset: 1px;
+}
+
+#navbar ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    word-wrap: break-word;
+
+}
+
+.nav-link {
+    display: block;
+    padding: 1em;
+    color: black;
+    text-decoration: none;
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+/******** Welcome **********/
+
+
+#welcome-section {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    margin: auto;
+}
+
+@keyframes greet {
+    0%   {bottom: 5em;color: #f7d70300;}
+    100% {bottom: 0em; color: #F3F4CD;}
+}
+
+@keyframes myName {
+    0%   {color: #f7d70300;}
+    100% {color: #F7D603;}
+}
+
+@keyframes jobDesc {
+    0%   {top: 5em;color: #f7d70300;}
+    100% {top: -0.6em; color: #F3F4CD;}
+}
+
+#greet {
+    position: relative;
+    font-family: Lobster;
+    font-size: 2.5em;
+    margin-right: 10em;
+    color: #F3F4CD;
+    animation-name: greet;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: none;
+}
+
+#myName {
+    font-family: Mulish;
+    font-size: 4em;
+    color:#F7D603;
+    animation-name: myName;
+    animation-duration: 7s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+}
+
+#jobDesc {
+    font-family: Rajdhani;
+    font-size: 2.5em;
+    margin-left: 7em;
+    color: #F3F4CD;
+    display: block;
+    position: relative;
+    top: -0.6em;
+    animation-name: jobDesc;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: none;
+
+}
+
+
+
+@keyframes right {
+  0%   {margin-left: 125%;background-color: #f7d70300;}
+  100% {margin-left: 25%; background-color: #F7D603;}
+}
+
+@keyframes left {
+  0%   {margin-right: 148%;background-color: #f7d70300;}
+  100% {margin-right: 52%; background-color: #F7D603;}
+}
+
+#right {
+    margin-left: 25%;
+    height: 1px;
+    background-color: #F7D603;
+    border: none;
+    animation-name: right;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+}
+
+#left {
+    margin-right: 52%;
+    height: 1px;
+    background-color: #F7D603;
+    border: none;
+    animation-name: left;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+}
+
+
+
+
+
+#about, #projects, #contact {
+    width: 100%;
+    height: 50em;
+}
+
+#bg {
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%,rgba(38,38,38,1) 50%,rgba(68,68,68,1) 100%);
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+    content: "";
+}
+
+
+
+/******** About **********/
+
+#about {
+    position: relative;
+    background-color: #F7D603;
+    top: 25vh;
+    height: 20em;
+    padding: 0 10em;
+    width: 100vw;
+    font-size: 14pt;
+}
+
+.svg-top {
+    display: block;
+    transform: rotate(0deg) scaleX(-2);
+    position: absolute;
+    top:  -30vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.svg-bottom {
+    display: block;
+    transform: rotate(180deg) scaleX(-2);
+    position: absolute;
+    bottom:  -30vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+
+
+
+
+
+/******** Projects **********/
+
+#projects {
+    margin: auto;
+    margin-top: 45vh;
+    height: 80rem;
+    display: grid;
+    grid-template-columns: 35rem 35rem;
+    grid-template-rows: 39rem 39rem;
+    justify-content: center;
+}
+
+
+.project-tile {
+    width: 25vw;
+    height: 40vh;
+    display: block;
+    background-color: #F7D603;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 5rem;
+}
+
+
+.project-tile .img-tile {
+    position: relative;
+    top:0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 20rem;
+}
+
+.project-tile p, a {
+    padding: 2rem;
+}
+
+.project-tile a {
+    display: block;
+    text-decoration: none;
+    margin: auto;
+    text-align: center;
+    background-color: #000000;
+    padding: 1rem;
+    width: 60%;
+    height: auto;
+    border-radius: 25px;
+
+
+}
+
+    .project-tile a:active{
+        color:white;
+    }
+
+    .project-tile a:visited{
+        color:white;
+    }
+
+
+/******** Contact **********/
+
+#contact {
+    text-align: center;
+    position: relative;
+    background-color: #F7D603;
+    height: 20em;
+    padding: 5rem 10em;
+    width: 100vw;
+    font-size: 14pt;
+    margin: 20rem auto 10rem auto;
+}
+
+.fa-twitter, .fa-facebook, .fa-github{
+  color: black;
+}
+
+#footer {
+    width: 100%;
+    height: 5rem;
+    color: #F3F4CD;
+    font-size: 20pt;
+    font-family: Rajdhani;
+    text-align: center;
+}
+
+@media (max-width:1500px)
+{
+    #greet, #jobDesc {
+        font-size: 40pt;
+    }
+
+    #myName {
+        font-size: 60pt;
+    }
+    #projects {
+    grid-template-columns: 30rem;
+}
+}
+

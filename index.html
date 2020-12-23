@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
 
-</body>
+        <div id="navbar">
+            <ul>
+                <li><a href="#welcome-section" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Work</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="welcome-section">
+
+            <h1>
+                <span id="greet">Hi, I'm</span><br><hr id="right">
+                <span id="myName">John Doe</span><hr id="left"><br>
+                <span id="jobDesc">a Web Developer</span>
+            </h1>
+
+        </div>
+
+        <div id="bg"></div>
+
+        <div id="about">
+            <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#F7D603" fill-opacity="1" d="M0,256L1440,32L1440,320L0,320Z"></path>
+            </svg>
+            <h2>About me</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse voluptas hic laboriosam ipsam sunt necessitatibus officiis debitis eveniet? Error vitae nobis, nostrum repellat optio perferendis repellendus ea saepe dolorem voluptas!<br><br>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aut nemo dicta eum alias odio assumenda labore, voluptas nesciunt nisi sapiente aliquid sed, iure cumque ducimus consequuntur voluptate. Ipsum, aspernatur.</p>
+            <svg class="svg-bottom xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#F7D603" fill-opacity="1" d="M0,256L1440,32L1440,320L0,320Z"></path>
+            </svg>
+        </div>
+
+        <div id="projects">
+
+            <div class="project-tile">
+                <img class="img-tile" src="images/img1.png" alt="sds">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="https://ruliyx.github.io/myTributePage/" target="_blank">Show More</a>
+            </div>
+
+            <div class="project-tile">
+                <img class="img-tile" src="images/img1.png" alt="sds">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="https://ruliyx.github.io/myTributePage/" target="_blank">Show More</a>
+            </div>
+
+            <div class="project-tile">
+                <img class="img-tile" src="images/img1.png" alt="sds">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="https://ruliyx.github.io/myTributePage/" target="_blank">Show More</a>
+            </div>
+
+            <div class="project-tile">
+                <img class="img-tile" src="images/img1.png" alt="sds">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="https://ruliyx.github.io/myTributePage/" target="_blank">Show More</a>
+            </div>
+
+
+        </div>
+
+        <div id="contact">
+            <h2>Get to know me!</h2>
+            <a href="#"><i class="fab fa-twitter fa-5x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-5x"></i></a>
+            <a id="profile-link" href="https://www.freecodecamp.org/ruliy" target="_blank"><i class="fab fa-github fa-5x"></i></a>
+        </div>
+
+        <div id="footer">
+            **This site is totally not ready, used for practice tests only &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#169; Rulin Christians 2020
+        </div>
+
+
+        <script src="https://kit.fontawesome.com/badb647e49.js" crossorigin="anonymous"></script>
+    </body>
 </html>
